@@ -28,11 +28,11 @@ h3 {
 }
 
 #see {
-    background: red;
-    display: relative;
+    background-image: url(../laboratorioCSS/imageszozor/fond_degraderouge.png);
+    color: white;
     float: right;
     margin-top: auto;
-    border: 1px solid red;
+    border: 1px;
     border-radius: 5px;
 }
 
@@ -67,6 +67,12 @@ h3 {
     width: 72%;
     float: left;
     text-align: justify;
+}
+
+#cuerpo h1 p {
+    position: relative;
+    margin-top: -40px;
+    margin-left: 50px;
 }
 
 #flechac {
