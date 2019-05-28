@@ -1,0 +1,80 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+#menu {
+    background: rgb(240, 240, 239);
+    width: 25%;
+    float: left;
+    height: 500px;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    height: 250px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+#menu ul li {
+    list-style: none;
+    display: block;
+    margin-top: 15px;
+    padding: 8px;
+}
+
+#menu ul li:hover {
+    background: skyblue;
+    color: white;
+}
+
+#menu ul li:visited {
+    background: skyblue;
+    color: white;
+}
+
+h1 {
+    color: #0061a9;
+    font-weight: normal;
+}
+
+#titulo {
+    width: 60%;
+    margin: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+#info {
+    width: 48%;
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+
+#sap {
+    font-weight: bold;
+}
+
+#info ul {
+    color: skyblue;
+    list-style: none;
+    margin-left: -45px;
+}
+
+#info ul li {
+    padding: 5px;
+}
+
+img {
+    width: 90%;
+}
+
+.azul {
+    color: skyblue;
+}
