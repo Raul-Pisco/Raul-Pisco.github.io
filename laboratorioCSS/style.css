@@ -122,4 +122,5 @@ li {
 
 ul {
     column-count: 2;
+    list-style-image: url(../laboratorioCSS/imageszozor/ico_liensexterne.png);
 }
