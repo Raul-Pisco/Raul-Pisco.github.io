@@ -33,11 +33,6 @@ a {
     color: white;
 }
 
-#menu ul li:visited {
-    background: skyblue;
-    color: white;
-}
-
 h1 {
     color: #0061a9;
     font-weight: normal;
@@ -59,6 +54,10 @@ h1 {
 
 #sap {
     font-weight: bold;
+}
+
+#info a {
+    color: skyblue;
 }
 
 #info ul {
