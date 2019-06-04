@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
-    <link rel="icon" type="image/jpg" href="Fotos/4.jpg" />
+    <link rel="icon" type="image/jpg" href="Fotos/black.jpg" />
 
     <style>
         .w3-tangerine {
@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body style="background-color:rgb(177, 171, 124);">
     <div class="w3-bar w3-black">
         <div class="w3-container w3-black w3-center w3-allerta w3-tangerine ">
             <p></p>
@@ -39,6 +39,7 @@
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
+
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio</a>
                 </li>
@@ -54,7 +55,7 @@
 
     <div class="w3-content">
 
-        <div class="w3-container w3-content w3-padding-24" style="max-width:800px" id="contact">
+        <div class="w3-container w3-content w3-padding-24" style="max-width:100%" id="contact">
             <h2 class="w3-wide w3-center">CONTACTANOS</h2>
             <p class="w3-opacity w3-center"><i>Entra en Contacto con Hotel Posada Del Rey</i></p>
 
@@ -88,18 +89,49 @@
                             </div>
                         </div>
                         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-section w3-center">Enviar</button>
+                        <button class="w3-button w3-black w3-section w3-center">Enviar Sugerencia</button>
+                        <!--  boton de reserva-->
+                        <button class="w3-button w3-black w3-section" onclick="document.getElementById('ticketModal').style.display='block'">Reservaciones</button>
+
+                        <!-- ventana emergente de reserva  -->
+                        <div id="ticketModal" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-grey w3-center w3-padding-32">
+                                    <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-grey w3-xlarge w3-display-topright">×</span>
+                                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Reserva</h2>
+                                </header>
+
+                                <div class="w3-container">
+                                    <p><label><i class="fa fa-user"></i>Selecione tipo de habitacion</label></p>
+                                    <p><select><option value="" style="display:none;">Seleccione Habitación</option>
+                                            <option value="Habitación Simple">Habitación Simple</option>
+                                            <option value="Habitación Doble">Habitación Doble</option>
+                                            <option value="Habitación Matrimonial">Habitación Matrimonial</option>
+                                            <option value="Habitación King">Habitación King</option>
+                                        </select>
+                                    </p>
+                                    <p><label><i class="fa fa-user"></i>Nombre</label></p>
+                                    <input class="w3-input w3-border" type="text" placeholder="Ingrese Nombre">
+                                    <p><label><i class="fa fa-user"></i>Apellidos</label></p>
+                                    <input class="w3-input w3-border" type="text" placeholder="Ingrese Apellidos">
+                                    <p><label><i class="fa fa-shopping-cart"></i> Cantidad de Habitaciones</label></p>
+                                    <input class="w3-input w3-border" type="number" placeholder="Ingrese Cantidad">
+                                    <button class="w3-button w3-block w3-grey w3-padding-16 w3-section w3-right">Reservar Habitación <i class="fa fa-check"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
                     </form>
                 </div>
+
             </div>
         </div>
+    </div>
 
     </div>
     </div>
-    <div class="jumbotron text-center" style="margin-bottom:0">
+    <div class="jumbotron text-center w3-padding-24" style="margin-bottom:0">
         <div>Copyright&#169; 2019 - Página creada por Raúl Castrejón - Todos los derechos reservados</div>
-        <address>Autor: Castrejón Pisco Fausto Raúl (<abbr title="Universidad Nacional de Cajamarca ">UNC</abbr>) <br/>
-        </address>
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
         <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -110,6 +142,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
+
     <script>
         var myIndex = 0;
         carousel();
@@ -128,6 +161,7 @@
             setTimeout(carousel, 3500);
         }
     </script>
+
 </body>
 
 </html>
