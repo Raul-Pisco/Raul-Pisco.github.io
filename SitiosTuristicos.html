@@ -7,78 +7,119 @@
     <title>Sitios Turisticos</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+    <!--
+       <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+   -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
     <link rel="icon" type="image/jpg" href="Fotos/4.jpg" />
 
 </head>
+<style>
+    .w3-tangerine {
+        font-family: "Tangerine", serif;
+    }
+</style>
 
 <body>
-    <div id="menu" dir="rtl">
-        <br>
-        <a id="inicio" href="index.html">Inicio</a>
-        <a id="inicio" href="Contacto.html">Contactos</a>
-        <a id="inicio" href="SitiosTuristicos.html">Sitios Turisticos</a>
-        <br><br>
-
+    <div class="w3-bar w3-black">
+        <div class="w3-container w3-black w3-center w3-allerta w3-tangerine ">
+            <p></p>
+            <p class="w3-xxlarge">Sitios Turisticos de la Region Cajamarca</p>
+        </div>
     </div>
 
-    <table class="tablasitios" border="1">
-        <caption>
-            <h1 id="titulo">Sitios Turisiticos de la Region de Cajamarca</h1>
-        </caption>
-        <tr>
-            <td class="tamaño"><strong>Sitio Turistico</strong></td>
-            <td><strong>Descripcion</strong></td>
-        </tr>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">Principal</a>
 
-        <tr>
-            <td><img class="img" src="Fotos/bañosdelinca.jpg" alt="Baños del Inca"></td>
-            <td>
-                <p class="sitio">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="SitiosTuristicos.html">Sitios Turisticos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="w3-content">
+
+        <div class="w3-row w3-margin">
+
+            <div class="w3-third">
+                <img src="Fotos/bañosdelinca.jpg" style="width:100%;min-height:200px">
+            </div>
+            <div class="w3-twothird w3-container">
+                <h2>Baños del Inca</h2>
+                <p>
                     El distrito de <strong>Baños del Inca</strong> es uno de los doce que conforman la provincia de Cajamarca ubicada en el departamento de Cajamarca en el Norte del Perú. El distrito es conocido por sus aguas termales. Se encuentra a
                     6 km de la ciudad de Cajamarca. Desde el punto de vista <em>jerárquico</em> de la Iglesia católica forma parte de la Diócesis de Cajamarca la cual a su vez, pertenece a la Arquidiócesis de Trujillo.
                 </p>
-            </td>
-        </tr>
+            </div>
 
-        <tr>
-            <td><img class="img" src="Fotos/cumbemayo.jpg" alt="Cumbe Mayo"></td>
-            <td>
-                <p class="sitio">
+        </div>
+        <div class="w3-row w3-margin">
+
+            <div class="w3-third">
+                <img src="Fotos/cumbemayo.jpg" style="width:100%;min-height:200px">
+            </div>
+            <div class="w3-twothird w3-container">
+                <h2>Cumbe Mayo</h2>
+                <p>
                     <strong>Cumbemayo</strong> es conocido como yacimiento arqueológico, en el cual destacan las ruinas de un acueducto pre-incaico que posee unos 8 km de longitud. El acueducto juntaba agua de precipitaciones y la transportaba hacia la
                     zona del océano <em>Pacífico</em>. Se cree que puede haber sido construido hacia el 1500 a. C. y antiguamente se pensaba que era la estructura existente más antigua de <em>America del Sur</em>. El nombre <strong>Cumbemayo</strong>                    puede tener sus raíces en la frase quechua, kumpi mayu, que significa “canal de agua bien construido”, o humpi mayo, que significa “río angosto.”
                 </p>
-            </td>
-        </tr>
+            </div>
 
-        <tr>
-            <td><img class="img" src="Fotos/collpa.jpg" alt="Hacienda la Collpa"></td>
-            <td>
-                <p class="sitio">
+        </div>
+        <div class="w3-row w3-margin">
+
+            <div class="w3-third">
+                <img src="Fotos/collpa.jpg" style="width:100%;min-height:200px">
+            </div>
+            <div class="w3-twothird w3-container">
+                <h2>La Collpa</h2>
+                <p>
                     <Strong>Hacienda La Collpa</Strong> Es un agradable lugar de la campiña cajamarquina dedicada a la crianza de ganado vacuno lechero. Lo particular de esta hacienda es el popular <em>"Llamado de las vacas"</em>, quienes acuden disciplinadamente al lugar que les corresponde
                     para el ordeño. Además del establo, se puede visitar la Casa Hacienda, la laguna artificial, la capilla La Virgen del Carmen y el mirador desde donde se puede observar el verde y colorido horizonte serrano.
                 </p>
-            </td>
-        </tr>
-        <tr>
-            <td><img class="img" src="Fotos/santaapolonia.jpg" alt="Mirador Santa Apolonia"></td>
-            <td>
-                <p class="sitio">
+            </div>
+
+        </div>
+        <div class="w3-row w3-margin">
+
+            <div class="w3-third">
+                <img src="Fotos/santaapolonia.jpg" style="width:100%;min-height:200px">
+            </div>
+            <div class="w3-twothird w3-container">
+                <h2>Mirador San Apolonia</h2>
+                <p>
                     <strong>El Mirador de Santa Apolonia</strong>, está ubicado en el cerro Santa Apolonia donde se puede observar la preciosa vista de la ciudad y todo su esplendor. En el mirador destacan bellas escalinatas y jardines y una capilla de
                     Santa Apolonia que es celebrada el día de la <a class="ref" href="https://es.wikipedia.org/wiki/Virgen_de_F%C3%A1tima" target="_blank">Virgen de Fátima</a>(13 de mayo). En sus linderos se pueden apreciar aún vestigios de edificaciones
                     pre-hispánicas, entre ellas la famosa <em>“Silla del Inca”</em> que está formada por dos bloques de piedra que afloran del mismo cerro, que han sido tallados para darle su forma actual.
                 </p>
-            </td>
-        </tr>
-    </table>
-    <footer>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
         <div>Copyright&#169; 2019 - Página creada por Raúl Castrejón - Todos los derechos reservados</div>
         <address>Autor: Castrejón Pisco Fausto Raúl (<abbr title="Universidad Nacional de Cajamarca ">UNC</abbr>) <br/>
-                </address>
+        </address>
 
-    </footer>
-
-    <script src="" async defer></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
